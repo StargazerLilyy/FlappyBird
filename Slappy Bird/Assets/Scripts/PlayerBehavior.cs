@@ -33,11 +33,15 @@ public class PlayerBehavior : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        gameStatus.EndGame();
-        if (botBorder != collision.collider)
+        if (!gameStatus.IsGameOver())
         {
-            IgnorePlayerPipeCollision(collision);
+            gameStatus.EndGame();
+            if (botBorder != collision.collider)
+            {
+                IgnorePlayerPipeCollision(collision);
+            }
         }
+
 
     }
 

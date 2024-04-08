@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7253293275425252228}
-  - component: {fileID: 5327362735002935772}
+  - component: {fileID: -2450849161716038637}
   m_Layer: 0
   m_Name: Pipes
   m_TagString: Untagged
@@ -35,7 +35,7 @@ Transform:
   - {fileID: 854146475597872411}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &5327362735002935772
+--- !u!50 &-2450849161716038637
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -47,10 +47,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -59,7 +59,7 @@ Rigidbody2D:
     serializedVersion: 2
     m_Bits: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 2
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!1 &2605117008580867354
@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 1549567108555530741}
   - component: {fileID: 6399327681029682744}
   - component: {fileID: 8168475548279184812}
+  - component: {fileID: 6189583117976401856}
   m_Layer: 0
   m_Name: TopPipe
   m_TagString: Untagged
@@ -192,6 +193,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7, y: 4.9}
   m_EdgeRadius: 0
+--- !u!50 &6189583117976401856
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2605117008580867354}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1 &4364022452751980048
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,6 +315,7 @@ GameObject:
   - component: {fileID: 7205511097034534482}
   - component: {fileID: 2294203669341039329}
   - component: {fileID: 1904225129469822411}
+  - component: {fileID: 7068588211350787634}
   m_Layer: 0
   m_Name: BottomPipe
   m_TagString: Untagged
@@ -406,3 +435,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7, y: 4.9}
   m_EdgeRadius: 0
+--- !u!50 &7068588211350787634
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7889243161586562929}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4

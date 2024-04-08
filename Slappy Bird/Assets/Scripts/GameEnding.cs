@@ -6,12 +6,12 @@ using UnityEngine.UI;
 public class GameEnding : MonoBehaviour
 {
     public bool gameOver = false;
-
     public Button restartButton;
     public Button menuButton;
-
     public ChangeScene sceneManager;
     public GameObject player;
+    public ScoreManager scoreManager;
+    public AudioSource gameoverSFX;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +26,9 @@ public class GameEnding : MonoBehaviour
         player.transform.Rotate(Vector3.forward * -90);
         restartButton.gameObject.SetActive(true);
         menuButton.gameObject.SetActive(true);
+        scoreManager.CheckHighScore();
+
+        gameoverSFX.Play();
     }
 
     public bool IsGameOver()
